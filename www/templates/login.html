@@ -1,0 +1,30 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <!--  <h1 class="title">Login</h1> -->
+    <!--  <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div> -->
+  </ion-header-bar>
+  <ion-content>
+      <form>
+        <div class="list list-inset">
+          <div clas="item">
+            <center><img src="img/logo.png" style="width:50%"></center>
+          </div>
+          <label class="item item-input">
+            <span class="input-label">Email</span>
+            <input type="text" ng-model="data.email">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Password</span>
+            <input type="password" ng-model="data.password">
+          </label>
+        </div>
+      </form>
+      <button class="button button-block button-stable" ng-click="submit()">Login</button>
+      <center>Don't have an account?</center>
+      <div ng-controller="SignUpCtrl">
+        <button class="button button-block button-stable" ng-click="signup()">Sign Up</button>
+      </div>      <!-- make Sign Up a href -->
+  </ion-content>
+</ion-modal-view>
